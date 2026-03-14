@@ -1,0 +1,12 @@
+#单一项目
+##圆周绕杆
+trotDirectionState==79，采用imu获取的yaw值进行计算从而实现原地转动
+！此处如果加上多层循环会导致爆栈
+##跳过高栏
+trotDirectionState==66？
+##行走
+trotDirectionState==51，采用imu获取的yaw值进行计算从而实现角度纠偏，可直走可转弯
+##匍匐
+trotDirectionState==78，和行走同理，高度控制
+#斜坡
+trotDirectionState==28/80；
